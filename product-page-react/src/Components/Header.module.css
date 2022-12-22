@@ -1,0 +1,172 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.header{
+    display: flex;
+    position: sticky;
+    background-color: var(--neutral-White);
+    top:0;
+    
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid var(--neutral-Grayish-Blue);
+    padding: 1.5em 1em;
+}
+.mainNav{
+    display:flex;
+    gap: 3em; 
+    align-items: center;
+}
+.menuLinks{
+    text-decoration: none;
+    color:var(--neutral-Dark-Grayish-Blue);
+}
+
+.personalNav{
+    display: flex;
+    align-items:center;
+    justify-content:right;
+    gap: 1em;
+}
+
+
+
+.header{
+    border: none;
+}
+.menu{
+    display: block;
+}
+.menuLinks{
+    display: none;
+}
+.avatar{
+    max-width: 20%;
+}
+.mainNav{
+    gap: 1em;
+}
+
+.sideMenuLinks {
+    text-decoration: none;
+    color: var(--neutral-Black);
+    font-weight: var(--font-Weight-Bold);
+
+}
+.sideMenuClose{
+    margin-bottom: 1em;
+}
+
+.opendMenu {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap:1.5em;
+    touch-action: none;
+
+    
+    
+    align-items:flex-start;
+    background-color: var(--neutral-White);
+    width: 65%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 1.5em;
+    
+}
+
+.opendMenuBackground {
+    position: fixed;
+    display: block;
+    background-color: var(--neutral-Black);
+    opacity: 75%;
+    width: 35%;
+    height: 100%;
+    touch-action: none;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    
+}
+
+    
+@media (min-width:900px) {
+    .menuLinks {
+        position: relative;
+        display: block;
+            
+    }
+    
+    .menuLinks::after{
+    position:absolute; 
+
+    bottom: -2.5em;
+    left: 0;
+    
+
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: var(--primary-Orange);
+    height: 4px;
+
+    transition: all .3s;
+    }
+    .menuLinks:hover::after{
+        
+        width: 100%;
+        
+            
+               
+    }
+    .menuLinks:hover{
+        color: var(--neutral-Black);
+    }
+
+    .avatar {
+        max-width: 30%;
+    }
+    .avatar:hover{
+        outline: 2px solid var(--primary-Orange);
+        border-radius: 1000em;
+    }
+    .personalNav{
+        gap:3em
+    }
+
+    .menu,
+    .opendMenuBackground,
+    .opendMenu {
+        display: none;
+    }
+    .header{
+        border-bottom: 1px solid var(--neutral-Light-Grayish-Blue);
+        z-index: 500;
+    }
+    .mainNav {
+        gap: 3em;
+    }
+
+}

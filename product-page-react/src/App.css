@@ -1,0 +1,61 @@
+@import url(https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700;800&display=swap);
+
+
+:root{
+    --primary-Orange:hsl(26, 100%, 55%);
+    --primary-Pale-Orange:hsl(25, 100%, 94%);
+
+    --neutral-Midnight-Blue:hsl(220, 13%, 13%);
+    --neutral-Dark-Grayish-Blue:hsl(219, 9%, 45%);
+    --neutral-Grayish-Blue:hsl(220, 14%, 75%);
+    --neutral-Light-Grayish-Blue:hsl(223, 64%, 98%);
+    --neutral-White:hsl(0, 0%, 100%);
+    --neutral-Black:hsl(0, 0%, 0%);
+
+    --font-Weight-Regular:400;
+    --font-Weight-Bold:700;
+
+    --font-Size-Header-big: 2rem;
+    --font-Size-Header:27px;
+    --font-Size-Main:16px;
+    --font-Size-Sub:12px;
+
+    --font-Family:'Kumbh Sans',
+        sans-serif;
+
+    
+}
+
+*{
+    margin:0;
+    padding:0;
+    font-family:'Kumbh Sans' ;
+}
+
+.App{
+    max-width: 1440px;
+    
+    margin:auto;
+}
+
+img{
+    max-width: 100%;
+    cursor: pointer;
+}
+button{
+    cursor: pointer;
+}
+
+
+
+
+@media (min-width:900px){
+    .container{
+        display: grid;
+        grid-auto-flow: column;
+        
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr;
+    }
+}

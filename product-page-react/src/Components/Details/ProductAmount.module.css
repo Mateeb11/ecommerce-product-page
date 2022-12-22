@@ -1,0 +1,17 @@
+.amount{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--neutral-Light-Grayish-Blue);
+    padding: 1em;
+    border-radius: .7em;
+
+    font-weight: var(--font-Weight-Bold);
+
+}
+
+.minus{
+    opacity: 25%;
+    cursor: default;
+}

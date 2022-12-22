@@ -1,0 +1,24 @@
+.add{
+    padding: 1.2em;
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1em;
+
+    font-weight: var(--font-Weight-Bold);
+    color: var(--neutral-White);
+    background-color: var(--primary-Orange);
+    border-radius: .7em;
+
+    box-shadow: 0 5px 10px var(--primary-Orange);
+    
+    
+    
+}
+
+
+@media (min-width:900px) {.add:hover {
+        opacity: .6;
+    }}
