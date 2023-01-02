@@ -163,7 +163,7 @@
     }
     .header{
         border-bottom: 1px solid var(--neutral-Light-Grayish-Blue);
-        z-index: 500;
+       
     }
     .mainNav {
         gap: 3em;
