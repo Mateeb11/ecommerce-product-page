@@ -8,4 +8,6 @@ This is my solution for [Frontend Mentor](https://www.frontendmentor.io/challeng
 
 This challenge is made by react.
 
+[Try here!](https://present-hook.surge.sh/)
+
 to be continued...
